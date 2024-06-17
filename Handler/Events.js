@@ -1,5 +1,6 @@
+const config = require('../config.json');
 const fs = require('fs');
-const config = require('../config.json')
+
 module.exports = (bot) => {
   const eventFiles = fs.readdirSync('./Events/').filter((file) => file.endsWith('.js'));
 
